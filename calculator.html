@@ -7,7 +7,34 @@
         <title>Simple Calculator</title>
     </head>
     <body>
+        <div id="calculator">
+            <input id="display" readonly>
+            <div id="keys">
+                <button onclick="clearEntry()" class="layer1">CE</button>
+                <button onclick="clearDisplay()" class="layer1"> C </button>
+                <button onclick="removeLastEntry()" class="layer1">⌫ </button>
+                <button onclick="appendToDisplay('%')" class="layer1">%</button>
+                <button onclick="appendToDisplay('7')" class="layer2">7</button>
+                <button onclick="appendToDisplay('8')" class="layer2">8</button>
+                <button onclick="appendToDisplay('9')" class="layer2">9</button>
+                <button onclick="appendToDisplay('/')" class="layer2">/</button>
+                <button onclick="appendToDisplay('4')" class="layer3">4</button>
+                <button onclick="appendToDisplay('5')" class="layer3">5</button>
+                <button onclick="appendToDisplay('6')" class="layer3">6</button>
+                <button onclick="appendToDisplay('*')" class="layer3">x</button>
+                <button onclick="appendToDisplay('1')" class="layer4">1</button>
+                <button onclick="appendToDisplay('2')" class="layer4">2</button>
+                <button onclick="appendToDisplay('3')" class="layer4">3</button>
+                <button onclick="appendToDisplay('-')" class="layer4">-</button>
+                <button onclick="appendToDisplay('0')" class="layer5">0</button>
+                <button onclick="appendToDisplay('.')" class="layer5">.</button>
+                <button onclick="calculate()" class="layer5">=</button>
+                <button onclick="appendToDisplay('+')" class="layer5">+</button>
+           
+            </div>
+        </div>
 
+        <script src="calculator.js"></script>
     </body>
     <footer>
 
