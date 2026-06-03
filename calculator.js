@@ -20,6 +20,14 @@ function percentage() {
         (match) => Number(match) / 100
     );
 }
+function appendToDisplay(input) {
+    if (justCalculated) {
+        display.value = "";      // Clear previous result
+        justCalculated = false;
+    }
+
+    display.value += input;
+}
 function calculate(){
     try{
         let expression = display.value
