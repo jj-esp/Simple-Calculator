@@ -14,9 +14,12 @@ function clearEntry(input){
 function removeLastEntry(){
     display.value = display.value.slice(0, -1);
 }
-function percentage(){
-    display.value = Number(display.value) / 100;   // still a bug
-  }  
+function percentage() {
+    display.value = display.value.replace(
+        /(\d+\.?\d*)$/,
+        (match) => Number(match) / 100
+    );
+}
 function calculate(){
     try{
     display.value = eval(display.value);
