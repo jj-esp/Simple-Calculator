@@ -22,7 +22,10 @@ function percentage() {
 }
 function calculate(){
     try{
-    display.value = eval(display.value);
+        let expression = display.value
+        .replace(/x/g,"*")
+        .replace(/÷/g, "/");
+        display.value = eval(expression);
     }
     catch{
         display.value = "Error";
