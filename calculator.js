@@ -1,7 +1,7 @@
 // Calculator Program
 
 const display = document.getElementById("display");
-
+const operators = ["+", "-", "x", "÷"];
 let lastOperand = "";
 let lastOperator = "";
 let justCalculated = false;
@@ -13,7 +13,20 @@ function appendToDisplay(input) {
         justCalculated = false;
         return;
     }
+    // Don't allow operator as first input
+    if (display.value === "" && operators.includes(input)) {
+        return;
+    }
 
+    // Prevent two operators in a row
+    const lastChar = display.value.slice(-1);
+
+    if (
+        operators.includes(input) &&
+        operators.includes(lastChar)
+    ) {
+        return;
+    }
     display.value += input;
     justCalculated = false;
 }
