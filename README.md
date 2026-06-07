@@ -5,6 +5,8 @@ A simple calculator built using HTML, CSS, and JavaScript. It supports basic ari
 ## Live Demo
 
 🔗 https://jj-esp.github.io/Simple-Calculator/
+
+## Preview
 ![Calculator Preview](images/screenshot.png)
 
 ## Features
