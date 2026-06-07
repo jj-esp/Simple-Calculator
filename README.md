@@ -1,6 +1,6 @@
 # Simple Calculator
 
-A simple calculator built using HTML, CSS, and JavaScript. It supports basic arithmetic operations and provides a clean, minimalist user interface.
+This calculator is inspired by my wife's favorite calculator. I recreated its simple and familiar design using HTML, CSS, and JavaScript while learning and improving my web development skills.
 
 ## Live Demo
 
